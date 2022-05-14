@@ -135,8 +135,9 @@ li{
     width: 60vw;
     margin: 10px;
 }
-.imagen__grid{
-    width: 100%;
+.imagen__grid:hover{
+    /* width: 100%; */
+    transform: scale(1.5);
 }
 
 .grid__mk1{
@@ -164,6 +165,7 @@ li{
     max-width: 300px;
     width: 50%;
 }
+
 
 
 
