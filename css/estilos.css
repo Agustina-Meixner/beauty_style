@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: opx;
+}
+
+html{
+    font-size: 10px;
+}
+.texto__normal{
+    font-size: 1.6rem;
+}
+
+/* .body{
+    background-image: url("../recursos/fondoprincipal.jpg");
+} */
+
+/* INDEX */
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../recursos/fondoprincipal.jpg");
+    /* background-color: rgb(12, 9, 62); */
+    color:white;
+    flex-wrap: wrap;
+}
+
+.header__titulo{
+    font-size: 5rem;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header__titulo2{
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.div__presentación{
+    margin: 20px;
+}
+
+li{
+    font-size: 2rem;
+    list-style-type:none;
+    padding: 5px;
+}
+
+.subtitulo{
+    font-weight: 750;
+    margin: 10px;
+    text-align: center;
+}
+.video__inspiracion{
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+}
+
+.video__inspiracion iframe{
+    width: 40vw;
+    height: 315px;
+}
+
+.section__lorem{
+    margin: 15px;
+}
+
+.nav__top{
+    display: flex;
+    font-weight: bold;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.nav__top__item{
+    background-color: rgb(212, 174, 243);
+    border: 2px solid rgb(144, 67, 144);
+    padding: 5px 10px;
+    width: 1.5rem;
+    text-decoration: none;
+}
+
+.h2__formato{
+    font-size:x-large;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid__prueba{
+    display: grid;
+    border: 3px solid transparent;
+    gap: 5px;
+    grid-template-areas:"uno dos tres"
+                        "cuatro cinco seis";
+    width: 70vw;
+}
+.imagen__grid{
+    width: 100%;
+}
+
+
+.grid__uno{
+    grid-area: uno;
+}
+.grid__dos{
+    grid-area: dos;
+}
+.grid__tres{
+    grid-area: tres;
+}
+.grid__cuatro{
+    grid-area: cuatro;
+}
+.grid__cinco{
+    grid-area: cinco;
+}
+.grid__seis{
+    grid-area: seis;
+}
+
+/* MAQUILLAJE */
+
+.grid__maquillaje{
+    display: grid;
+    border: 3px solid transparent;
+    gap: 0px;
+    grid-template-areas:"uno dos tres cuatro cinco seis";
+    width: 60vw;
+    margin: 10px;
+}
+.imagen__grid{
+    width: 100%;
+}
+
+.grid__mk1{
+    grid-area: uno;
+}
+.grid__mk2{
+    grid-area: dos;
+    align-self: center;
+}
+.grid__mk3{
+    grid-area: tres;
+}
+.grid__mk4{
+    grid-area: cuatro;
+}
+.grid__mk5{
+    grid-area: cinco;
+}
+.grid__mk6{
+    grid-area: seis;
+    align-self: center;
+}
+
+.img__makeup{
+    max-width: 300px;
+    width: 50%;
+}
+
+
+
+/* FRAGANCIAS */
+.section__perfumes{
+    align-items: center;
+    padding: 40px;
+}
+
+.img__perfu{
+    max-width: 300px;
+    width: 50%;
+}
+
+
+/* CUIDADO DE LA PIEL */
+
+.img__skincare{
+    height: 20%;
+    width: 20%;
+}
+.section__skincare{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+
+/* ASESORÍA */
+
+.fixed{
+    position:fixed;
+    width: 50px;
+    bottom: 0px;
+    right: 0px;
+}
+.main__foto{
+    background-image: url("../recursos/texturas\ para\ fondo.JPG");
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    height: 800px;
+    align-items: center;
+}
+
+.h3__formato{
+    text-align: center;
+}
+.formulario{
+    margin: 1px;
+}
+
+.boton{
+    border-radius: 10px;
+    color:rgb(47, 47, 161);
+    margin: 5px;
+}
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+}
+
+.footer__redes{
+    width: 30px;
+    height: 30px;
+}
+
+/*Media Query para cambios estructurales*/
+/*REM */
+    /*TABLET*/
+@media (max-width: 700px){
+    ul{
+        flex-direction: column;
+    }
+
+    .video__inspiracion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .video__inspiracion iframe{
+        width: 80vw;
+        height: 315px;
+    }
+
+    .img__skincare{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+    /*CELULAR*/
+@media (max-width:540px){
+    .grid__prueba{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "uno"
+            "cinco"
+            "tres"
+            "seis"
+            "dos"
+            "cuatro"
+            ;
+}
+
+.grid__maquillaje{
+    display: grid;
+    border: 3px solid transparent;
+    gap: 0px;
+    grid-template-areas:"uno"
+                        "dos"
+                        "tres"
+                        "cuatro"
+                        "cinco"
+                        "seis";
+    width: 40vw;
+    margin: 10px;
+}
+
+}
