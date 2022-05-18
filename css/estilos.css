@@ -10,10 +10,6 @@ html{
     font-size: 1.6rem;
 }
 
-/* .body{
-    background-image: url("../recursos/fondoprincipal.jpg");
-} */
-
 /* INDEX */
 
 .header{
@@ -25,6 +21,19 @@ html{
     color:white;
     flex-wrap: wrap;
 }
+
+.bg-nuevo{
+    background-image: url("../recursos/fondoprincipal.jpg")
+}
+.navbar-toggler{
+    border-color: white;
+}
+
+.link-nav{
+    color: white;
+    text-decoration: none;
+}
+
 
 .header__titulo{
     font-size: 5rem;
@@ -278,18 +287,6 @@ li{
             ;
 }
 
-.grid__maquillaje{
-    display: grid;
-    border: 3px solid transparent;
-    gap: 0px;
-    grid-template-areas:"uno"
-                        "dos"
-                        "tres"
-                        "cuatro"
-                        "cinco"
-                        "seis";
-    width: 40vw;
-    margin: 10px;
-}
+
 
 }
