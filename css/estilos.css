@@ -6,15 +6,12 @@
 html {
   font-size: 10px; }
 
-<<<<<<< HEAD
 .texto__normal {
   font-size: 1.6rem; }
 
 /* .body{
     background-image: url("../recursos/fondoprincipal.jpg");
 } */
-=======
->>>>>>> aplicando-bootstrap
 /* INDEX */
 .header {
   display: flex;
@@ -31,32 +28,10 @@ html {
   text-align: center;
   font-family: 'Montserrat', sans-serif; }
 
-<<<<<<< HEAD
 .header__titulo2 {
   font-size: 3.5rem;
   text-align: center;
   font-family: 'Montserrat', sans-serif; }
-=======
-.bg-nuevo{
-    background-image: url("../recursos/fondoprincipal.jpg")
-}
-.navbar-toggler{
-    border-color: white;
-}
-
-.link-nav{
-    color: white;
-    text-decoration: none;
-}
-
-
-.header__titulo{
-    font-size: 5rem;
-    font-style: italic;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
->>>>>>> aplicando-bootstrap
 
 .div__presentación {
   margin: 20px; }
@@ -84,7 +59,7 @@ li {
   margin: 15px; }
 
 .nav__top {
-  display: flex !important;
+  display: flex;
   font-weight: bold;
   list-style: none;
   font-family: 'Montserrat', sans-serif;
@@ -242,7 +217,6 @@ li {
     display: flex;
     flex-direction: column; } }
 
-<<<<<<< HEAD
 /*CELULAR*/
 @media (max-width: 540px) {
   .grid__prueba {
@@ -255,41 +229,3 @@ li {
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
     width: 40vw;
     margin: 10px; } }
-=======
-    .video__inspiracion{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 30px;
-    }
-
-    .video__inspiracion iframe{
-        width: 80vw;
-        height: 315px;
-    }
-
-    .img__skincare{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-    /*CELULAR*/
-@media (max-width:540px){
-    .grid__prueba{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "uno"
-            "cinco"
-            "tres"
-            "seis"
-            "dos"
-            "cuatro"
-            ;
-}
-
-
-
-}
->>>>>>> aplicando-bootstrap
