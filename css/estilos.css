@@ -1,7 +1,8 @@
 @charset "UTF-8";
+/* Regla de reseteo */
 * {
-  margin: 0px;
-  padding: opx; }
+  margin: 0;
+  padding: 0; }
 
 html {
   font-size: 10px; }
@@ -18,20 +19,17 @@ html {
   justify-content: center;
   flex-direction: column;
   background-image: url("../recursos/fondoprincipal.jpg");
-  /* background-color: rgb(12, 9, 62); */
   color: white;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; }
 
 .header__titulo {
   font-size: 5rem;
-  font-style: italic;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif; }
+  font-style: italic; }
 
 .header__titulo2 {
-  font-size: 3.5rem;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif; }
+  font-size: 3.5rem; }
 
 .div__presentación {
   margin: 20px; }
@@ -57,6 +55,21 @@ li {
 
 .section__lorem {
   margin: 15px; }
+
+.nav-link {
+  color: black; }
+
+.nav-link:hover {
+  box-shadow: inset -2px 0 5px #0b0b80, inset 0 2px 5px #0b0b80, inset 2px 0 5px #0b0b80, inset 0 -2px 5px #0b0b80;
+  animation-name: animation--nav;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: white; }
+
+@keyframes animation--nav {
+  50% {
+    border-radius: 20px; } }
 
 .nav__top {
   display: flex;
@@ -153,6 +166,10 @@ li {
   max-width: 300px;
   width: 50%; }
 
+/*carousel*/
+.carousel_perf {
+  height: 600px; }
+
 /* CUIDADO DE LA PIEL */
 .img__skincare {
   height: 20%;
@@ -228,4 +245,8 @@ li {
     gap: 0px;
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
     width: 40vw;
-    margin: 10px; } }
+    margin: 10px; }
+  .nav-pills .show > .nav-link {
+    background-color: transparent; }
+  .nav-pills .show > .active {
+    background-color: #371094; } }

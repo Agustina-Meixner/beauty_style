@@ -2,9 +2,11 @@
 @import 'header' ;
 @import 'footer' ;
 
+
+/* Regla de reseteo */
 *{
-    margin: 0px;
-    padding: opx;
+    margin: 0;
+    padding: 0;
 }
 
 html{
@@ -12,6 +14,7 @@ html{
 }
 .texto__normal{
     font-size: 1.6rem;
+    margin: 10px;
 }
 
 /* .body{
@@ -25,22 +28,23 @@ html{
     justify-content: center;
     flex-direction: column;
     background-image: url("../recursos/fondoprincipal.jpg");
-    /* background-color: rgb(12, 9, 62); */
     color:white;
     flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header__titulo{
     font-size: 5rem;
     font-style: italic;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    margin: 25px;
 }
 
 .header__titulo2{
     font-size: 3.5rem;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .div__presentación{
@@ -69,9 +73,27 @@ li{
     height: 315px;
 }
 
-.section__lorem{
-    margin: 15px;
+.nav-link {
+    color: black; }
+    .nav-link:hover {
+        box-shadow: inset -2px 0 5px rgb(11, 11, 128), inset 0 2px 5px rgb(11, 11, 128), inset 2px 0 5px rgb(11, 11, 128), inset 0 -2px 5px rgb(11, 11, 128);
+        animation-name: animation--nav;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        color: white; }
+@keyframes animation--nav {
+    50% {
+    border-radius: 20px; } 
 }
+
+
+
+
+
+
+
+
 
 .nav__top{
     display: flex;
@@ -184,6 +206,12 @@ li{
     width: 50%;
 }
 
+/*carousel*/
+.carousel_perf{
+    height: 600px;
+}
+
+
 
 /* CUIDADO DE LA PIEL */
 
@@ -295,5 +323,10 @@ li{
     width: 40vw;
     margin: 10px;
 }
+.nav-pills .show > .nav-link {
+    background-color: transparent; }
+.nav-pills .show > .active {
+    background-color: rgb(55, 16, 148); }
+
 
 }
