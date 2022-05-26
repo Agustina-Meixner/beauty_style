@@ -1,4 +1,25 @@
 @charset "UTF-8";
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../recursos/fondoprincipal.jpg");
+  color: white;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; }
+  .header__titulo {
+    font-size: 5rem;
+    font-style: italic; }
+  .header__titulo2 {
+    font-size: 3.5rem; }
+
+.footer {
+  display: flex; }
+  .footer__redes {
+    width: 30px;
+    height: 30px; }
+
 /* Regla de reseteo */
 * {
   margin: 0;
@@ -10,26 +31,9 @@ html {
 .texto__normal {
   font-size: 1.6rem; }
 
-/* .body{
-    background-image: url("../recursos/fondoprincipal.jpg");
-} */
 /* INDEX */
-.header {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url("../recursos/fondoprincipal.jpg");
-  color: white;
-  flex-wrap: wrap;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif; }
-
-.header__titulo {
-  font-size: 5rem;
-  font-style: italic; }
-
-.header__titulo2 {
-  font-size: 3.5rem; }
+h3 {
+  margin: 25px; }
 
 .div__presentación {
   margin: 20px; }
@@ -48,13 +52,9 @@ li {
   display: inline-block;
   text-align: center;
   padding: 30px; }
-
-.video__inspiracion iframe {
-  width: 40vw;
-  height: 315px; }
-
-.section__lorem {
-  margin: 15px; }
+  .video__inspiracion iframe {
+    width: 40vw;
+    height: 315px; }
 
 .nav-link {
   color: black; }
@@ -79,13 +79,12 @@ li {
   flex-wrap: wrap;
   margin: 20px;
   justify-content: center; }
-
-.nav__top__item {
-  background-color: #d4aef3;
-  border: 2px solid #904390;
-  padding: 5px 10px;
-  width: 1.5rem;
-  text-decoration: none; }
+  .nav__top__item {
+    background-color: #d4aef3;
+    border: 2px solid #904390;
+    padding: 5px 10px;
+    width: 1.5rem;
+    text-decoration: none; }
 
 .h2__formato {
   font-size: x-large;
@@ -120,19 +119,6 @@ li {
 .grid__seis {
   grid-area: seis; }
 
-/* MAQUILLAJE */
-.grid__maquillaje {
-  display: grid;
-  border: 3px solid transparent;
-  gap: 0px;
-  grid-template-areas: "uno dos tres cuatro cinco seis";
-  width: 60vw;
-  margin: 10px; }
-
-.imagen__grid:hover {
-  /* width: 100%; */
-  transform: scale(1.5); }
-
 .grid__mk1 {
   grid-area: uno; }
 
@@ -152,6 +138,18 @@ li {
 .grid__mk6 {
   grid-area: seis;
   align-self: center; }
+
+/* MAQUILLAJE */
+.grid__maquillaje {
+  display: grid;
+  border: 3px solid transparent;
+  gap: 0px;
+  grid-template-areas: "uno dos tres cuatro cinco seis";
+  width: 60vw;
+  margin: 10px; }
+
+.imagen__grid:hover {
+  transform: scale(1.5); }
 
 .img__makeup {
   max-width: 300px;
@@ -206,14 +204,6 @@ li {
   border-radius: 10px;
   color: #2f2fa1;
   margin: 5px; }
-
-/* FOOTER */
-.footer {
-  display: flex; }
-
-.footer__redes {
-  width: 30px;
-  height: 30px; }
 
 /*Media Query para cambios estructurales*/
 /*REM */

@@ -8,49 +8,23 @@
     margin: 0;
     padding: 0;
 }
-
 html{
     font-size: 10px;
 }
 .texto__normal{
     font-size: 1.6rem;
-    margin: 10px;
 }
 
-/* .body{
-    background-image: url("../recursos/fondoprincipal.jpg");
-} */
 
 /* INDEX */
 
-.header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url("../recursos/fondoprincipal.jpg");
-    color:white;
-    flex-wrap: wrap;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.header__titulo{
-    font-size: 5rem;
-    font-style: italic;
-}
 
 h3{
     margin: 25px;
 }
-
-.header__titulo2{
-    font-size: 3.5rem;
-}
-
 .div__presentación{
     margin: 20px;
 }
-
 li{
     font-size: 2rem;
     list-style-type:none;
@@ -66,13 +40,11 @@ li{
     display: inline-block;
     text-align: center;
     padding: 30px;
+        iframe{
+            width: 40vw;
+            height: 315px;
+        }
 }
-
-.video__inspiracion iframe{
-    width: 40vw;
-    height: 315px;
-}
-
 .nav-link {
     color: black; }
     .nav-link:hover {
@@ -86,15 +58,6 @@ li{
     50% {
     border-radius: 20px; } 
 }
-
-
-
-
-
-
-
-
-
 .nav__top{
     display: flex;
     font-weight: bold;
@@ -103,22 +66,19 @@ li{
     flex-wrap: wrap;
     margin: 20px;
     justify-content: center;
+        &__item{
+            background-color: rgb(212, 174, 243);
+            border: 2px solid rgb(144, 67, 144);
+            padding: 5px 10px;
+            width: 1.5rem;
+            text-decoration: none;
+        }
 }
-
-.nav__top__item{
-    background-color: rgb(212, 174, 243);
-    border: 2px solid rgb(144, 67, 144);
-    padding: 5px 10px;
-    width: 1.5rem;
-    text-decoration: none;
-}
-
 .h2__formato{
     font-size:x-large;
     text-align: center;
     padding: 10px;
 }
-
 .grid__prueba{
     display: grid;
     border: 3px solid transparent;
@@ -130,26 +90,47 @@ li{
 .imagen__grid{
     width: 100%;
 }
+.grid{
+    &__uno{
+        grid-area: uno;
+    }
+    &__dos{
+        grid-area: dos;
+    }
+    &__tres{
+        grid-area: tres;
+    }
+    &__cuatro{
+        grid-area: cuatro;
+    }
+    &__cinco{
+        grid-area: cinco;
+    }
+    &__seis{
+        grid-area: seis;
+    }
+    &__mk1{
+        grid-area: uno;       
+    }
+    &__mk2{
+        grid-area: dos;
+        align-self: center;
+    }
+    &__mk3{
+        grid-area: tres;
+    }
+    &__mk4{
+        grid-area: cuatro;
+    }
+    &__mk5{
+        grid-area: cinco;
+    }
+    &__mk6{
+        grid-area: seis;
+        align-self: center;
+    }
+}
 
-
-.grid__uno{
-    grid-area: uno;
-}
-.grid__dos{
-    grid-area: dos;
-}
-.grid__tres{
-    grid-area: tres;
-}
-.grid__cuatro{
-    grid-area: cuatro;
-}
-.grid__cinco{
-    grid-area: cinco;
-}
-.grid__seis{
-    grid-area: seis;
-}
 
 /* MAQUILLAJE */
 
@@ -162,37 +143,12 @@ li{
     margin: 10px;
 }
 .imagen__grid:hover{
-    /* width: 100%; */
     transform: scale(1.5);
 }
-
-.grid__mk1{
-    grid-area: uno;
-}
-.grid__mk2{
-    grid-area: dos;
-    align-self: center;
-}
-.grid__mk3{
-    grid-area: tres;
-}
-.grid__mk4{
-    grid-area: cuatro;
-}
-.grid__mk5{
-    grid-area: cinco;
-}
-.grid__mk6{
-    grid-area: seis;
-    align-self: center;
-}
-
 .img__makeup{
     max-width: 300px;
     width: 50%;
 }
-
-
 
 
 /* FRAGANCIAS */
@@ -258,16 +214,7 @@ li{
 }
 
 
-/* FOOTER */
 
-.footer{
-    display: flex;
-}
-
-.footer__redes{
-    width: 30px;
-    height: 30px;
-}
 
 /*Media Query para cambios estructurales*/
 /*REM */

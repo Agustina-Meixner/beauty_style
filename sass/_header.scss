@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../recursos/fondoprincipal.jpg");
+    color:white;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+        &__titulo{
+            font-size: 5rem;
+            font-style: italic;
+        }
+            &__titulo2{
+                font-size: 3.5rem;
+            }
+}
