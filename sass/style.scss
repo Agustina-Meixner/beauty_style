@@ -1,6 +1,7 @@
 @import 'variables' ;
 @import 'header' ;
 @import 'footer' ;
+@import 'sasscript';
 
 
 /* Regla de reseteo */
@@ -8,6 +9,13 @@
     margin: 0;
     padding: 0;
 }
+
+/* Estructura */
+body{
+    background-image: url("../recursos/fondoprincipal.jpg");
+    color: white;
+    }
+
 html{
     font-size: 10px;
 }
@@ -17,7 +25,6 @@ html{
 
 
 /* INDEX */
-
 
 h3{
     margin: 25px;
@@ -46,34 +53,23 @@ li{
         }
 }
 .nav-link {
-    color: black; }
+    color:white }
     .nav-link:hover {
         box-shadow: inset -2px 0 5px rgb(11, 11, 128), inset 0 2px 5px rgb(11, 11, 128), inset 2px 0 5px rgb(11, 11, 128), inset 0 -2px 5px rgb(11, 11, 128);
         animation-name: animation--nav;
         animation-duration: 2s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        color: white; }
+        }
 @keyframes animation--nav {
     50% {
-    border-radius: 20px; } 
+    border-radius: 20px; }
 }
-.nav__top{
-    display: flex;
-    font-weight: bold;
-    list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    flex-wrap: wrap;
-    margin: 20px;
-    justify-content: center;
-        &__item{
-            background-color: rgb(212, 174, 243);
-            border: 2px solid rgb(144, 67, 144);
-            padding: 5px 10px;
-            width: 1.5rem;
-            text-decoration: none;
-        }
+
+.nav--top--link{
+
 }
+
 .h2__formato{
     font-size:x-large;
     text-align: center;
@@ -86,6 +82,7 @@ li{
     grid-template-areas:"uno dos tres"
                         "cuatro cinco seis";
     width: 70vw;
+    justify-content: center;
 }
 .imagen__grid{
     width: 100%;
@@ -110,7 +107,7 @@ li{
         grid-area: seis;
     }
     &__mk1{
-        grid-area: uno;       
+        grid-area: uno;
     }
     &__mk2{
         grid-area: dos;
@@ -164,7 +161,7 @@ li{
 
 /*carousel*/
 .carousel_perf{
-    height: 600px;
+    height: 500px;
 }
 
 
@@ -192,6 +189,7 @@ li{
 }
 .main__foto{
     background-image: url("../recursos/texturas\ para\ fondo.JPG");
+    color: black;
     background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -272,8 +270,7 @@ li{
 }
 .nav-pills .show > .nav-link {
     background-color: transparent; }
-.nav-pills .show > .active {
-    background-color: rgb(55, 16, 148); }
+.nav-pills .show > .active
 
 
 }

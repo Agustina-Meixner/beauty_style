@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../recursos/fondoprincipal.jpg");
   color: white;
   flex-wrap: wrap;
   text-align: center;
@@ -24,6 +23,11 @@
 * {
   margin: 0;
   padding: 0; }
+
+/* Estructura */
+body {
+  background-image: url("../recursos/fondoprincipal.jpg");
+  color: white; }
 
 html {
   font-size: 10px; }
@@ -57,34 +61,18 @@ li {
     height: 315px; }
 
 .nav-link {
-  color: black; }
+  color: white; }
 
 .nav-link:hover {
   box-shadow: inset -2px 0 5px #0b0b80, inset 0 2px 5px #0b0b80, inset 2px 0 5px #0b0b80, inset 0 -2px 5px #0b0b80;
   animation-name: animation--nav;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  color: white; }
+  animation-iteration-count: infinite; }
 
 @keyframes animation--nav {
   50% {
     border-radius: 20px; } }
-
-.nav__top {
-  display: flex;
-  font-weight: bold;
-  list-style: none;
-  font-family: 'Montserrat', sans-serif;
-  flex-wrap: wrap;
-  margin: 20px;
-  justify-content: center; }
-  .nav__top__item {
-    background-color: #d4aef3;
-    border: 2px solid #904390;
-    padding: 5px 10px;
-    width: 1.5rem;
-    text-decoration: none; }
 
 .h2__formato {
   font-size: x-large;
@@ -96,7 +84,8 @@ li {
   border: 3px solid transparent;
   gap: 5px;
   grid-template-areas: "uno dos tres" "cuatro cinco seis";
-  width: 70vw; }
+  width: 70vw;
+  justify-content: center; }
 
 .imagen__grid {
   width: 100%; }
@@ -166,7 +155,7 @@ li {
 
 /*carousel*/
 .carousel_perf {
-  height: 600px; }
+  height: 500px; }
 
 /* CUIDADO DE LA PIEL */
 .img__skincare {
@@ -187,6 +176,7 @@ li {
 
 .main__foto {
   background-image: url("../recursos/texturas para fondo.JPG");
+  color: black;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -239,4 +229,4 @@ li {
   .nav-pills .show > .nav-link {
     background-color: transparent; }
   .nav-pills .show > .active {
-    background-color: #371094; } }
+    background-color: #25046c; } }
