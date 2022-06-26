@@ -12,7 +12,7 @@
 
 /* Estructura */
 body{
-    background-image: url("../recursos/fondoprincipal.jpg");
+    background-image: $fondo-principal;
     color: white;
     }
 
@@ -66,10 +66,9 @@ li{
     border-radius: 20px; }
 }
 
-.nav--top--link{
-
+.navegador{
+    background-color: rgba(137, 43, 226, 0.358);
 }
-
 .h2__formato{
     font-size:x-large;
     text-align: center;
@@ -82,7 +81,7 @@ li{
     grid-template-areas:"uno dos tres"
                         "cuatro cinco seis";
     width: 70vw;
-    justify-content: center;
+    margin:auto;
 }
 .imagen__grid{
     width: 100%;
@@ -166,6 +165,7 @@ li{
 
 
 
+
 /* CUIDADO DE LA PIEL */
 
 .img__skincare{
@@ -183,9 +183,11 @@ li{
 
 .fixed{
     position:fixed;
-    width: 50px;
-    bottom: 0px;
-    right: 0px;
+    border: 1px solid green;
+    border-radius: 40px;
+    width: 80px;
+    bottom: 3rem;
+    right: 1rem;
 }
 .main__foto{
     background-image: url("../recursos/texturas\ para\ fondo.JPG");
@@ -194,7 +196,7 @@ li{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;
-    height: 800px;
+    height: 80vh;
     align-items: center;
 }
 
@@ -203,6 +205,15 @@ li{
 }
 .formulario{
     margin: 1px;
+}
+
+.contenedor-form{
+    background-color: rgba(233, 194, 194, 0.6);
+    border: 2px solid black;
+    border-radius:20px ;
+    padding: 1rem;
+
+
 }
 
 .boton{
@@ -268,9 +279,10 @@ li{
     width: 40vw;
     margin: 10px;
 }
+
 .nav-pills .show > .nav-link {
     background-color: transparent; }
-.nav-pills .show > .active
+
 
 
 }

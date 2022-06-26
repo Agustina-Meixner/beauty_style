@@ -6,7 +6,7 @@
   color: white;
   flex-wrap: wrap;
   text-align: center;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
   .header__titulo {
     font-size: 5rem;
     font-style: italic; }
@@ -14,7 +14,8 @@
     font-size: 3.5rem; }
 
 .footer {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .footer__redes {
     width: 30px;
     height: 30px; }
@@ -74,6 +75,9 @@ li {
   50% {
     border-radius: 20px; } }
 
+.navegador {
+  background-color: rgba(137, 43, 226, 0.358); }
+
 .h2__formato {
   font-size: x-large;
   text-align: center;
@@ -85,7 +89,7 @@ li {
   gap: 5px;
   grid-template-areas: "uno dos tres" "cuatro cinco seis";
   width: 70vw;
-  justify-content: center; }
+  margin: auto; }
 
 .imagen__grid {
   width: 100%; }
@@ -170,9 +174,11 @@ li {
 /* ASESORÍA */
 .fixed {
   position: fixed;
-  width: 50px;
-  bottom: 0px;
-  right: 0px; }
+  border: 1px solid green;
+  border-radius: 40px;
+  width: 80px;
+  bottom: 3rem;
+  right: 1rem; }
 
 .main__foto {
   background-image: url("../recursos/texturas para fondo.JPG");
@@ -181,7 +187,7 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 80vh;
   align-items: center; }
 
 .h3__formato {
@@ -189,6 +195,12 @@ li {
 
 .formulario {
   margin: 1px; }
+
+.contenedor-form {
+  background-color: rgba(233, 194, 194, 0.6);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 1rem; }
 
 .boton {
   border-radius: 10px;
@@ -227,6 +239,4 @@ li {
     width: 40vw;
     margin: 10px; }
   .nav-pills .show > .nav-link {
-    background-color: transparent; }
-  .nav-pills .show > .active {
-    background-color: #25046c; } }
+    background-color: transparent; } }
