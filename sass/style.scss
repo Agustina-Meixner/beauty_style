@@ -43,6 +43,13 @@ li{
     margin: 10px;
     text-align: center;
 }
+.video{
+    border: 2px solid rgba(78, 78, 141, 0.381);
+    background-color: rgba(6, 6, 83, 0.498);
+    border-radius: 20px;
+    margin: auto;
+}
+
 .video__inspiracion{
     display: inline-block;
     text-align: center;
@@ -67,7 +74,7 @@ li{
 }
 
 .navegador{
-    background-color: rgba(137, 43, 226, 0.358);
+    background-color: rgba(9, 9, 51, 0.986);
 }
 .h2__formato{
     font-size:x-large;
@@ -130,6 +137,10 @@ li{
 
 /* MAQUILLAJE */
 
+.container{
+    background-color: white;
+    padding: 3rem;
+}
 .grid__maquillaje{
     display: grid;
     border: 3px solid transparent;
@@ -144,17 +155,19 @@ li{
 .img__makeup{
     max-width: 300px;
     width: 50%;
+    padding: 3rem;
 }
 
 
 /* FRAGANCIAS */
 .section__perfumes{
-    align-items: center;
+    background-color: white;
+    justify-content: center;
     padding: 40px;
 }
 
 .img__perfu{
-    max-width: 300px;
+    max-width: 200px;
     width: 50%;
 }
 
